@@ -1,0 +1,220 @@
+
+
+        /* Estilize a imagem */
+        img {
+            width: 2000px; /* Defina a largura desejada */
+        }
+
+.alemao {
+   font-family: 'MedievalSharp', cursive;
+  top:100%;
+  text-align: center;
+  font-size: 100px;
+  color: #A65F21;
+  display: block;
+
+
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #5f0208;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+}
+
+h1 {
+text-align: center;
+font-size: 60px;
+color: #A65F21;
+}
+
+
+center {
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 964px;
+  position: relative;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 15px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  border-radius:70%;
+  width: 200px;
+  height: 200px;
+  background: rgb(128, 0, 0);
+}
+
+
+.categoria{
+ width: 100vh;
+ text-align: center;
+}
+
+.perfil{
+  width: 115%;
+  height: 8%;
+  position: absolute;
+  right:20%;
+  top: 3%;
+  color: #A65F21 ;
+}
+  
+ .coracao {
+  width: 115%;
+  height: 7%;
+  position: absolute;
+  left:20%;
+  top: 3%;
+  color: #A65F21 ;
+}
+
+ .carrinho {
+  width: 115%;
+  height: 7%;
+  position: absolute;
+  left:28%;
+  top: 3%;
+  color: #A65F21 ;
+ }
+
+
+ @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ 
+ 
+ .container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   height: 500px;
+   gap: 10px;
+ 
+   > div {
+     flex: 0 0 120px;
+     border-radius: 0.5rem;
+     transition: 0.5s ease-in-out;
+     cursor: pointer;
+     box-shadow: 1px 5px 15px #5f0208;
+     position: relative;
+     overflow: hidden;
+ 
+     &:nth-of-type(1) {
+       background: url("https://img.freepik.com/fotos-premium/livro-magico-aberto-com-luz-saindo-generativa-ai_161299-634.jpg")
+         no-repeat 50% / cover;
+     }
+     &:nth-of-type(2) {
+       background: url("https://img.freepik.com/fotos-gratis/rendering-of-wizard-controlling-magic_23-2150608361.jpg?t=st=1696552314~exp=1696552914~hmac=ed60f0c7a295966872aa227c9cd34a4d9aad5381fd218c10fde4e079603f1904")
+         no-repeat 50% / cover;
+     }
+     &:nth-of-type(3) {
+       background: url("https://img.freepik.com/fotos-gratis/dragoes-e-imagem-de-inteligencia-artificial-de-fantasia_23-2150400884.jpg?w=1380&t=st=1696552378~exp=1696552978~hmac=9ca3fa9cec16a8c54fa0da70c6d5632ee68cf354f68e18d248ad18f07dccb826")
+         no-repeat 50% / cover;
+     }
+     &:nth-of-type(4) {
+       background: url("https://img.freepik.com/fotos-gratis/arranjo-de-bruxaria-com-luzes-de-vela-no-escuro_23-2148277566.jpg?w=1380&t=st=1696552447~exp=1696553047~hmac=b536dba7873c9753930d38ce858436e9e34c80b954e20eaa99e2907bf4eba643")
+         no-repeat 50% / cover;
+     }
+ 
+     .content {
+       font-size: 1.5rem;
+       color: #fff;
+       display: flex;
+       align-items: center;
+       padding: 15px;
+       opacity: 0;
+       flex-direction: column;
+       height: 100%;
+       justify-content: flex-end;
+       background: rgb(2, 2, 46);
+       background: linear-gradient(
+         0deg,
+         rgba(2, 2, 46, 0.6755077030812324) 0%,
+         rgb(97, 3, 3) 100%
+       );
+       transform: translatey(100%);
+       transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+       visibility: hidden;
+ 
+       span {
+         display: block;
+         margin-top: 5px;
+         font-size: 1.2rem;
+       }
+     }
+ 
+     &:hover {
+       flex: 0 0 250px;
+       box-shadow: 1px 3px 15px #5f0208;
+       transform: translatey(-30px);
+     }
+ 
+     &:hover .content {
+       opacity: 1;
+       transform: translatey(0%);
+       visibility: visible;
+     }
+   }
+ }
+ 
+
+
+
+
